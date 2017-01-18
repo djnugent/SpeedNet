@@ -21,6 +21,8 @@ If you want a more graphical display you can use the play mode. This will output
 
 `python speednet.py video.mp4 speed.json --mode=play`
 
+![Flow](flow.png)
+
 The output video file can be found in `flow.avi`. Simple modifications can be made to play it live, but I was working on a server and didn't have a VNC setup.
 
 ## My Approach
