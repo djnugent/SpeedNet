@@ -10,7 +10,6 @@ import argparse
 import json
 import shutil
 
-print
 
 class SpeedNet:
 
