@@ -10,7 +10,7 @@ import argparse
 import json
 import shutil
 
-
+print
 
 class SpeedNet:
 
@@ -126,7 +126,7 @@ class SpeedNet:
     def create_model(self):
 
         print "Compiling Model"
-        
+
         self.model = Sequential()
         self.model.add(Convolution2D(32, 8,8 ,border_mode='same', subsample=(4,4),input_shape=(self.DSIZE[0],self.DSIZE[1],2)))
         self.model.add(Activation('relu'))
@@ -192,7 +192,7 @@ class SpeedNet:
         print "Starting testing"
         #load data
         X,Y = self.prep_data(X_src,Y_src,shuffle = False)
-        rec = cv2.VideoWriter('flow.avi',int(cv2.cv.CV_FOURCC('M','J','P','G')),15,(300,300))
+        rec = cv2.VideoWriter('flow.avi',int(cv2.cv.CV_FOURCC('M','J','P','G')),48,(300,300))
         #load weights
         ret = self.load_weights()
         if ret:
