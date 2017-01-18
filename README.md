@@ -15,6 +15,7 @@ To test SpeedNet use:
 `python speednet.py video.mp4 speed.json --mode=test`
 
 This will print the mean squared error
+If you get an outrageously high number then then weight loaded wrong. Just try again.
 
 ## Play
 If you want a more graphical display you can use the play mode. This will output the Optical Flow video with prediction overlay.
