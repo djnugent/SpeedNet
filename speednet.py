@@ -2,6 +2,7 @@ from keras.models import Sequential
 from keras.layers import Dropout, Flatten, Dense, Activation
 from keras.layers.convolutional import Convolution2D, MaxPooling2D
 from keras.optimizers import Adam
+from keras.callbacks import EarlyStopping
 import numpy as np
 import cv2
 import sys
@@ -15,7 +16,7 @@ class SpeedNet:
 
     DSIZE = (100,100)
     W_FILE = "weights.h5"
-    EPOCHS = 50
+    EPOCHS = 100
     BATCH_SIZE = 32
 
     def main(self, args):
@@ -164,6 +165,7 @@ class SpeedNet:
         #load data
         X,Y = self.prep_data(X_src,Y_src,shuffle = True,wipe = wipe)
         X = X[:,:,:,[0,2]] #extract channels with data
+       
         #train model
         print "Starting training"
         self.model.fit(X, Y, batch_size=batch_size,
