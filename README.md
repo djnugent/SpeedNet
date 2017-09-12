@@ -1,6 +1,6 @@
 # SpeedNet
 
-This is a network I designed for the Comma.ai speed challenge when I was applying for an internship. I passed but turned down the offer. They have used my code as a positive example to show other candidates, which is flattering. 
+This is a neural network I designed for the Comma.ai speed challenge when I was applying for an internship. I passed but turned down the offer. They have used my code as a positive example to show other candidates, which is flattering. 
 
 The challenge is to predect the speed of the vehicle using only a video feed from the dash.
 
