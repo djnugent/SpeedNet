@@ -1,5 +1,9 @@
 # SpeedNet
 
+This is a network I designed for the Comma.ai speed challenge when I was applying for an internship. I passed but turned down the offer. They have used my code as a positive example to show other candidates, which is flattering. 
+
+The challenge is to predect the speed of the vehicle using only a video feed from the dash.
+
 ## Train
 SpeedNet is pretrained but if you'd like to retrain it use:
 
@@ -14,7 +18,8 @@ To test SpeedNet use:
 
 `python speednet.py video.mp4 speed.json --mode=test`
 
-This will print the mean squared error
+This will print the mean squared error.
+
 If you get an outrageously high number then then weight loaded wrong. Just try again.
 
 ## Play
